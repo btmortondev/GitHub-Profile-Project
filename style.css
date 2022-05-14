@@ -5,8 +5,8 @@
 }
 
 body {
-  background-color: #7ee8fa;
-  background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
   margin: 0;
   font-family: "Source Code Pro", monospace;
   display: flex;
@@ -14,4 +14,33 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+}
+
+.card {
+  background-color: #7f5a83;
+  background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+  width: 100%;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 10px solid #0d324d;
+  height: 150px;
+  width: 150px;
+}
+
+.user-info {
+  color: white;
+  margin-left: 2rem;
+}
+
+.user-info h2 {
+  margin-top: 0;
+}
+
+.info {
+  list-style: none;
+  color: white;
 }

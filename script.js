@@ -11,21 +11,25 @@ async function getUser(user) {
   creatUserCard(respData);
 }
 
+getUser("btmortondev");
+
 function creatUserCard(user) {
   const cardHTML = `
+        <div class="card">
         <div>
-            <img src="${user.avatar_url}" alt="${user.name}" />
+            <img class="avatar" src="${user.avatar_url}" alt="${user.name}" />
         </div>
-        <div>
+        <div class="user-info" >
             <h2> ${user.name} </h2>
             <p> ${user.bio} </p>
         </div>
 
-        <ul>
+        <ul class="info" >
             <li> ${user.followers} </li>
             <li> ${user.following} </li>
             <li> ${user.public_repos} </li>
         </ul>
+        </div>
     `;
 
   main.innerHTML = cardHTML;
