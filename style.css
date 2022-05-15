@@ -21,7 +21,7 @@ body {
   background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
     0 15px 40px rgba(166, 173, 201, 0.2);
-  width: 100%;
+  width: 500px;
 }
 
 .avatar {
@@ -36,11 +36,20 @@ body {
   margin-left: 2rem;
 }
 
-.user-info h2 {
+.user-name {
   margin-top: 0;
+  margin-bottom: 0;
+  font-size: 35px;
+}
+
+.user-bio {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
 }
 
 .info {
   list-style: none;
   color: white;
+  margin-top: 0;
 }
