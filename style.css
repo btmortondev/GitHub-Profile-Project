@@ -26,8 +26,15 @@ body {
   background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
     0 15px 40px rgba(166, 173, 201, 0.2);
-  width: 500px;
+  width: 550px;
+  height: 250px;
   margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
 }
 
 .avatar {
@@ -39,13 +46,15 @@ body {
 
 .user-info {
   color: white;
-  margin-left: 2rem;
+  margin-left: 20px;
 }
 
 .user-name {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 35px;
+  font-size: 16px;
+  margin-left: 12px;
+  color: white;
 }
 
 .user-bio {
@@ -57,5 +66,5 @@ body {
 .info {
   list-style: none;
   color: white;
-  margin-top: 0;
+  margin-top: 5px;
 }

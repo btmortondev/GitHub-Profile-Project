@@ -18,17 +18,16 @@ function creatUserCard(user) {
         <div class="card">
         <div>
             <img class="avatar" src="${user.avatar_url}" alt="${user.name}" />
+            <h2 class="user-name"> ${user.name} </h2>
         </div>
         <div class="user-info" >
-            <h2 class="user-name"> ${user.name} </h2>
             <p class="user-bio" > ${user.bio} </p>
-        </div>
-
-        <ul class="info" >
+            <ul class="info" >
             <li> Followers: ${user.followers} </li>
             <li> Following: ${user.following} </li>
             <li> Public Repositories: ${user.public_repos} </li>
         </ul>
+        </div>
         </div>
     `;
 
