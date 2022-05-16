@@ -34,7 +34,14 @@ body {
   color: black;
 }
 
-.card {
+.card-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: space-around;
+}
+
+.card1 {
   background-color: black;
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
     0 15px 40px rgba(166, 173, 201, 0.2);
@@ -48,6 +55,19 @@ body {
   justify-content: space-around;
   align-items: center;
   align-content: center;
+  margin-right: 10px;
+}
+
+.card2 {
+  background-color: black;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+  width: 300px;
+  height: 500px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .avatar {
@@ -56,6 +76,22 @@ body {
   height: 150px;
   width: 150px;
   margin-left: 10px;
+}
+
+.avatar2 {
+  border-radius: 50%;
+  border: 10px;
+  height: 150px;
+  width: 150px;
+  margin-top: 10px;
+}
+
+.user-intro {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
 }
 
 .user-info {
@@ -71,10 +107,22 @@ body {
   color: white;
 }
 
+.user-name2 {
+  margin-top: 2px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: white;
+}
+
 .user-bio {
   font-size: 15px;
   margin: 0;
   padding: 0;
+}
+
+.user-bio2 {
+  font-size: 15px;
+  margin-top: 10px;
 }
 
 .info {

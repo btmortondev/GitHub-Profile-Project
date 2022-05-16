@@ -15,20 +15,37 @@ getUser("btmortondev");
 
 function creatUserCard(user) {
   const cardHTML = `
-        <div class="card">
-        <div>
-            <img class="avatar" src="${user.avatar_url}" alt="${user.name}" />
-            <h2 class="user-name"> ${user.name} </h2>
+      <div class="card-section" >
+        <div class="card1">
+          <div>
+              <img class="avatar" src="${user.avatar_url}" alt="${user.name}" />
+              <h2 class="user-name"> ${user.name} </h2>
+          </div>
+          <div class="user-info" >
+              <p class="user-bio" > ${user.bio} </p>
+              <ul class="info" >
+              <li> Followers: ${user.followers} </li>
+              <li> Following: ${user.following} </li>
+              <li> Public Repositories: ${user.public_repos} </li>
+            </ul>
+          </div>
         </div>
-        <div class="user-info" >
-            <p class="user-bio" > ${user.bio} </p>
-            <ul class="info" >
-            <li> Followers: ${user.followers} </li>
-            <li> Following: ${user.following} </li>
-            <li> Public Repositories: ${user.public_repos} </li>
-        </ul>
+
+        <div class="card2">
+          <div class="user-intro" >
+              <img class="avatar2" src="${user.avatar_url}" alt="${user.name}" />
+              <h2 class="user-name2"> ${user.name} </h2>
+          </div>
+          <div class="user-info" >
+              <p class="user-bio2" > ${user.bio} </p>
+              <ul class="info" >
+              <li> Followers: ${user.followers} </li>
+              <li> Following: ${user.following} </li>
+              <li> Public Repositories: ${user.public_repos} </li>
+            </ul>
+          </div>
         </div>
-        </div>
+      </div>
     `;
 
   main.innerHTML = cardHTML;
