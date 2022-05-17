@@ -114,6 +114,11 @@ body {
   color: white;
 }
 
+.user-sub2 {
+  color: white;
+  margin: 0;
+}
+
 .user-bio {
   font-size: 15px;
   margin: 0;

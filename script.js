@@ -35,6 +35,10 @@ function creatUserCard(user) {
           <div class="user-intro" >
               <img class="avatar2" src="${user.avatar_url}" alt="${user.name}" />
               <h2 class="user-name2"> ${user.name} </h2>
+              <p class="user-sub2" > ${user.location} </p>
+              <p class="user-sub2" > ${user.company} </p>
+              <p class="user-sub2" > Email: ${user.email} </p>
+              <p class="user-sub2" > Twitter: ${user.twitter_username} </p>
           </div>
           <div class="user-info" >
               <p class="user-bio2" > ${user.bio} </p>
